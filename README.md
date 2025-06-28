@@ -9,7 +9,7 @@ No utiliza un servicio de dominios personalizados por un tema de mantenimiento.
 
 ## Demo
 
-👉 [https://mi-app.vercel.app](https://mi-app.vercel.app)
+👉 [https://linksu.vercel.app/](https://linksu.vercel.app/)
 
 ---
 
