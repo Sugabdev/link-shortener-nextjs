@@ -1,13 +1,13 @@
-import { NextResponse } from "next/server"
+import { NextRequest, NextResponse } from "next/server"
 import { neon } from '@neondatabase/serverless'
 
-export async function GET(req: Request, { params }: { params: { code: string } }) {
+export async function GET(req: NextRequest) {
     try {
         // Neon sql client.
         const sql = neon(`${process.env.DATABASE_URL}`)
 
         // Get the code from the URL.
-        const { code } = params
+        const code = req.nextUrl.pathname.slice(1)
 
         // Get the original URL from the database.
         const [row] = await sql`SELECT original_url FROM Links WHERE code = ${code}`
