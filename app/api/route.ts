@@ -30,7 +30,7 @@ export async function POST(req: Request) {
                     message: 'URL already shortened',
                     data: {
                         original_url: original_url,
-                        short_url: `https://mi-app.vercel.app/${code}`,
+                        short_url: `https://linksu.vercel.app/${code}`,
                     }
                 },
                 { status: 200 }
@@ -46,7 +46,7 @@ export async function POST(req: Request) {
                     message: 'URL successfully shortened',
                     data: {
                         original_url: url,
-                        short_url: `https://mi-app.vercel.app/${code}`,
+                        short_url: `https://linksu.vercel.app/${code}`,
                     }
                 },
                 { status: 200 }
